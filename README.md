@@ -115,7 +115,35 @@ cat urls.txt | htxalive | tee results.txt | wc -l
 </table>
 
 ---
+```bash
 
+.__     __ ____  ___      .__  .__
+|  |___/  |\   \/  /____  |  | |__|__  __ ____
+|  |  \   __\     /\__  \ |  | |  \  \/ // __ \
+|   Y  \  | /     \ / __ \|  |_|  |\   /\  ___/
+|___|  /__|/___/\  (____  /____/__| \_/  \___  >
+     \/          \_/    \/                   \/
+
+                           with <3 by @Karthik-HR0
+
+
+[INF] Current htxalive version v1.0.1 (version check failed)
+Usage of ./htxalive:
+  -c int
+        Concurrency level (default 10)
+  -ip
+        Show IP address
+  -o string
+        Collect only output URLs
+  -s    Silent mode
+  -sc
+        Show HTTP status codes
+  -t int
+        Threading level (default 3)
+  -tl
+        Show page titles
+```
+---
 Troubleshooting
 
 Empty Results?
