@@ -1,6 +1,6 @@
 <h1 align="center">htxalive</h1>
 
-> **htxalive** - Your go-to tool for HTTP status checks, title extraction, and IP resolution.
+> **htxalive**  - A reliable tool to check the "life" status of HTTP transactions ,status checks, title extraction, and IP resolution.
 
 `htxalive` is a fast and efficient command-line utility written in Go, designed to streamline web reconnaissance. Whether you're analyzing URLs for availability, extracting page titles, or resolving IP addresses, `htxalive` makes the process seamless and efficient.
 
@@ -28,7 +28,7 @@ go install github.com/Karthik-HR0/htxalive@latest
 
 ---
 
-Arguments
+Uses
 
 
 ---
@@ -65,6 +65,54 @@ cat urls.txt | htxalive -c 20 -o output.txt
 cat urls.txt | htxalive | tee results.txt | wc -l
 ```
 
+<h3>Arguments</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>-o</code></td>
+      <td>Save output URLs to a file</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><code>-s</code></td>
+      <td>Silent mode (minimal output)</td>
+      <td><code>false</code></td>
+    </tr>
+    <tr>
+      <td><code>-c</code></td>
+      <td>Concurrency level</td>
+      <td><code>10</code></td>
+    </tr>
+    <tr>
+      <td><code>-t</code></td>
+      <td>Threading level</td>
+      <td><code>3</code></td>
+    </tr>
+    <tr>
+      <td><code>-sc</code></td>
+      <td>Show HTTP status codes</td>
+      <td><code>false</code></td>
+    </tr>
+    <tr>
+      <td><code>-tl</code></td>
+      <td>Show page titles</td>
+      <td><code>false</code></td>
+    </tr>
+    <tr>
+      <td><code>-ip</code></td>
+      <td>Show resolved IP addresses</td>
+      <td><code>false</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
