@@ -57,7 +57,7 @@ func printLogo() {
 }
 
 func checkLatestVersion() string {
-	url := fmt.Sprintf("https://github.com/Karthik-HR0/htxalive/releases/latest", githubRepo)
+	url := fmt.Sprintf("https://api.github.com/Karthik-HR0/htxalive/releases/latest", githubRepo)
 	resp, err := http.Get(url)
 	if err != nil {
 		return ""
