@@ -28,10 +28,6 @@ go install github.com/Karthik-HR0/htxalive@latest
 
 ---
 
-Uses
-
-
----
 
 Usage Examples
 
